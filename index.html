@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naveenraja K | Java Full Stack Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Naveenraja K - Java Full Stack Developer, TAP Academy Trainee. Specializing in Core Java, Spring Boot, Servlets, JSP, and MySQL. Featured Project: Food Delivery Application.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Glow Orbs -->
+  <div class="ambient-glow">
+    <div class="glow-orb-1"></div>
+    <div class="glow-orb-2"></div>
+    <div class="glow-orb-3"></div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo">
+        <span class="brand-tag">&lt;</span><span class="gradient-text">Naveenraja</span><span class="brand-tag">.dev /&gt;</span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#food-app">Food App Project</a></li>
+        <li><a href="#projects">All Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary btn-sm">
+          <i class="fas fa-paper-plane"></i> Hire Me
+        </a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          <span>TAP Academy Trainee &bull; Open to Work</span>
+        </div>
+
+        <h1 class="hero-name">
+          Hi, I'm <br>
+          <span class="gradient-text">Naveenraja K</span>
+        </h1>
+
+        <div class="hero-typing-wrapper">
+          <span>I am a</span>
+          <span class="typing-text" id="typing-text">Java Full Stack Developer</span>
+          <span class="cursor"></span>
+        </div>
+
+        <p class="hero-description">
+          Aspiring Full Stack Software Engineer passionate about building scalable backend architectures, 
+          RESTful APIs, and database-driven web applications with <strong>Java, Servlets, JSP, Spring Boot, and MySQL</strong>.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#food-app" class="btn btn-primary">
+            <i class="fas fa-utensils"></i> Explore Food App
+          </a>
+          <a href="resume.html" target="_blank" class="btn btn-secondary">
+            <i class="fas fa-file-pdf"></i> View Resume
+          </a>
+          <a href="https://linkedin.com" target="_blank" class="btn btn-accent">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+        </div>
+
+        <div class="hero-stats-row">
+          <div class="stat-item">
+            <h3>TAP Academy</h3>
+            <p>Java Full Stack Trainee</p>
+          </div>
+          <div class="stat-item">
+            <h3>100+</h3>
+            <p>DSA Problems Solved</p>
+          </div>
+          <div class="stat-item">
+            <h3>MVC Full Stack</h3>
+            <p>Food Ordering App</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual Terminal -->
+      <div class="hero-visual">
+        <div class="floating-badge floating-badge-1">
+          <i class="fab fa-java"></i> Java 8+ / J2EE
+        </div>
+
+        <div class="terminal-card">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="dot-red"></span>
+              <span class="dot-yellow"></span>
+              <span class="dot-green"></span>
+            </div>
+            <div class="terminal-title">NaveenrajaProfile.java</div>
+            <div><i class="fas fa-terminal" style="color: #64748b; font-size: 0.8rem;"></i></div>
+          </div>
+          <div class="terminal-body">
+            <p><span class="code-keyword">public class</span> <span class="code-class">NaveenrajaProfile</span> {</p>
+            <p style="padding-left: 1.25rem;"><span class="code-keyword">private String</span> <span class="code-var">name</span> = <span class="code-str">"Naveenraja K"</span>;</p>
+            <p style="padding-left: 1.25rem;"><span class="code-keyword">private String</span> <span class="code-var">role</span> = <span class="code-str">"Java Full Stack Developer"</span>;</p>
+            <p style="padding-left: 1.25rem;"><span class="code-keyword">private String</span> <span class="code-var">institution</span> = <span class="code-str">"TAP Academy"</span>;</p>
+            <p style="padding-left: 1.25rem;"><span class="code-keyword">private String[]</span> <span class="code-var">skills</span> = {</p>
+            <p style="padding-left: 2.5rem;"><span class="code-str">"Java"</span>, <span class="code-str">"Spring Boot"</span>, <span class="code-str">"Servlets & JSP"</span>,</p>
+            <p style="padding-left: 2.5rem;"><span class="code-str">"MySQL"</span>, <span class="code-str">"Hibernate"</span>, <span class="code-str">"JavaScript"</span></p>
+            <p style="padding-left: 1.25rem;">};</p>
+            <p style="padding-left: 1.25rem;"><span class="code-keyword">private String</span> <span class="code-var">flagshipProject</span> = <span class="code-str">"Food Delivery Web App"</span>;</p>
+            <br>
+            <p style="padding-left: 1.25rem;"><span class="code-keyword">public void</span> <span class="code-class">getCareerStatus</span>() {</p>
+            <p style="padding-left: 2.5rem;"><span class="code-comment">// Ready for Software Engineer roles</span></p>
+            <p style="padding-left: 2.5rem;"><span class="code-var">System</span>.<span class="code-var">out</span>.<span class="code-var">println</span>(<span class="code-str">"Status: 100% Job Ready 🚀"</span>);</p>
+            <p style="padding-left: 1.25rem;">}</p>
+            <p>}</p>
+          </div>
+        </div>
+
+        <div class="floating-badge floating-badge-2">
+          <i class="fas fa-database"></i> MySQL & JDBC
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Driven by Clean Code & <span class="gradient-text">Robust Architecture</span></h2>
+        <p class="section-desc">Get to know my technical foundation, education, and development journey.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Hello! I am <strong>Naveenraja K</strong>, an enthusiastic Java Full Stack Developer currently undergoing comprehensive, 
+            industry-aligned technical training at <strong>TAP Academy</strong>.
+          </p>
+          <p>
+            My core strength lies in translating complex functional requirements into well-structured, maintainable code. 
+            I have deep practical experience building end-to-end web applications implementing the 
+            <strong>MVC (Model-View-Controller) architecture</strong>, <strong>DAO (Data Access Object) design pattern</strong>, 
+            and relational database schema management.
+          </p>
+          <p>
+            I believe in daily practice and consistency — solving algorithmic problems, writing clean JDBC code, 
+            and crafting intuitive user interfaces.
+          </p>
+
+          <div class="tap-academy-highlight">
+            <h4><i class="fas fa-graduation-cap"></i> TAP Academy Full Stack Specialization</h4>
+            <ul>
+              <li><i class="fas fa-check-circle"></i> Intensive hands-on curriculum covering Core Java, Advanced Java, J2EE, Spring Boot, & MySQL.</li>
+              <li><i class="fas fa-check-circle"></i> Daily Data Structures & Algorithms (DSA) problem solving in Java.</li>
+              <li><i class="fas fa-check-circle"></i> Real-world web projects following enterprise architectural standards.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Timeline / Highlights -->
+        <div class="glass-card timeline-card">
+          <div class="timeline">
+            <div class="timeline-item active">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">Current &bull; 2026</div>
+              <h4 class="timeline-title">Java Full Stack Developer Trainee</h4>
+              <p class="timeline-desc">TAP Academy — Mastering Core Java, Collections, Multithreading, Servlets, JSP, JDBC, Spring Boot, and MySQL.</p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">Flagship Milestone</div>
+              <h4 class="timeline-title">Food Ordering Web App (`food_app_tap`)</h4>
+              <p class="timeline-desc">Engineered full-scale food ordering platform with MVC pattern, Tomcat 10, Servlets, Cart Session tracking, and MySQL DB.</p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">Foundation</div>
+              <h4 class="timeline-title">Computer Science & Application Fundamentals</h4>
+              <p class="timeline-desc">Strong grounding in Object-Oriented Programming (OOPs), Relational Database Design, and Web Standard technologies.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Technical Arsenal</span>
+        <h2 class="section-title">My Core <span class="gradient-text">Competencies</span></h2>
+        <p class="section-desc">Skills honed through practical training and real project implementations.</p>
+      </div>
+
+      <div class="skills-categories-grid">
+        <!-- Java & Core -->
+        <div class="glass-card skill-category-card">
+          <div class="skill-category-header">
+            <div class="skill-cat-icon icon-java"><i class="fab fa-java"></i></div>
+            <h3>Core & Adv Java</h3>
+          </div>
+          <div class="skill-badges-list">
+            <div class="skill-item-bar">
+              <div class="skill-item-info"><span>OOPs Concepts & Polymorphism</span><span>95%</span></div>
+              <div class="progress-track"><div class="progress-fill" style="width: 95%;"></div></div>
+            </div>
+            <div class="skill-item-bar">
+              <div class="skill-item-info"><span>Collections Framework</span><span>90%</span></div>
+              <div class="progress-track"><div class="progress-fill" style="width: 90%;"></div></div>
+            </div>
+            <div class="skill-item-bar">
+              <div class="skill-item-info"><span>Exception Handling & Streams</span><span>85%</span></div>
+              <div class="progress-track"><div class="progress-fill" style="width: 85%;"></div></div>
+            </div>
+            <div class="skill-item-bar">
+              <div class="skill-item-info"><span>Multithreading & Memory Mgmt</span><span>80%</span></div>
+              <div class="progress-track"><div class="progress-fill" style="width: 80%;"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend & Frameworks -->
+        <div class="glass-card skill-category-card">
+          <div class="skill-category-header">
+            <div class="skill-cat-icon icon-backend"><i class="fas fa-server"></i></div>
+            <h3>Backend Engineering</h3>
+          </div>
+          <div class="skill-badges-list">
+            <div class="skill-item-bar">
+              <div class="skill-item-info"><span>Java Servlets & JSP</span><span>92%</span></div>
+              <div class="progress-track"><div class="progress-fill" style="width: 92%;"></div></div>
+            </div>
+            <div class="skill-item-bar">
+              <div class="skill-item-info"><span>Spring Boot & REST APIs</span><span>82%</span></div>
+              <div class="progress-track"><div class="progress-fill" style="width: 82%;"></div></div>
+            </div>
+            <div class="skill-item-bar">
+              <div class="skill-item-info"><span>Hibernate ORM / JPA</span><span>80%</span></div>
+              <div class="progress-track"><div class="progress-fill" style="width: 80%;"></div></div>
+            </div>
+            <div class="skill-item-bar">
+              <div class="skill-item-info"><span>JDBC & Connection Pooling</span><span>90%</span></div>
+              <div class="progress-track"><div class="progress-fill" style="width: 90%;"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Database & Storage -->
+        <div class="glass-card skill-category-card">
+          <div class="skill-category-header">
+            <div class="skill-cat-icon icon-db"><i class="fas fa-database"></i></div>
+            <h3>Database & SQL</h3>
+          </div>
+          <div class="skill-badges-list">
+            <div class="skill-item-bar">
+              <div class="skill-item-info"><span>MySQL Database</span><span>90%</span></div>
+              <div class="progress-track"><div class="progress-fill" style="width: 90%;"></div></div>
+            </div>
+            <div class="skill-item-bar">
+              <div class="skill-item-info"><span>SQL Joins, Subqueries & Indexes</span><span>88%</span></div>
+              <div class="progress-track"><div class="progress-fill" style="width: 88%;"></div></div>
+            </div>
+            <div class="skill-item-bar">
+              <div class="skill-item-info"><span>Relational Schema & Normalization</span><span>85%</span></div>
+              <div class="progress-track"><div class="progress-fill" style="width: 85%;"></div></div>
+            </div>
+            <div class="skill-item-bar">
+              <div class="skill-item-info"><span>Transactions (ACID Properties)</span><span>85%</span></div>
+              <div class="progress-track"><div class="progress-fill" style="width: 85%;"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Frontend Web -->
+        <div class="glass-card skill-category-card">
+          <div class="skill-category-header">
+            <div class="skill-cat-icon icon-frontend"><i class="fab fa-html5"></i></div>
+            <h3>Frontend Development</h3>
+          </div>
+          <div class="skill-badges-list">
+            <div class="skill-item-bar">
+              <div class="skill-item-info"><span>HTML5 & Semantic Markup</span><span>95%</span></div>
+              <div class="progress-track"><div class="progress-fill" style="width: 95%;"></div></div>
+            </div>
+            <div class="skill-item-bar">
+              <div class="skill-item-info"><span>CSS3, Flexbox & Grid</span><span>90%</span></div>
+              <div class="progress-track"><div class="progress-fill" style="width: 90%;"></div></div>
+            </div>
+            <div class="skill-item-bar">
+              <div class="skill-item-info"><span>JavaScript (DOM & ES6+)</span><span>82%</span></div>
+              <div class="progress-track"><div class="progress-fill" style="width: 82%;"></div></div>
+            </div>
+            <div class="skill-item-bar">
+              <div class="skill-item-info"><span>Responsive & Mobile First UI</span><span>88%</span></div>
+              <div class="progress-track"><div class="progress-fill" style="width: 88%;"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools & Deployment -->
+        <div class="glass-card skill-category-card">
+          <div class="skill-category-header">
+            <div class="skill-cat-icon icon-tools"><i class="fas fa-tools"></i></div>
+            <h3>Tools & Servers</h3>
+          </div>
+          <div class="skill-badges-list">
+            <div class="skill-item-bar">
+              <div class="skill-item-info"><span>Apache Tomcat 10 Server</span><span>90%</span></div>
+              <div class="progress-track"><div class="progress-fill" style="width: 90%;"></div></div>
+            </div>
+            <div class="skill-item-bar">
+              <div class="skill-item-info"><span>Eclipse IDE & VS Code</span><span>95%</span></div>
+              <div class="progress-track"><div class="progress-fill" style="width: 95%;"></div></div>
+            </div>
+            <div class="skill-item-bar">
+              <div class="skill-item-info"><span>Git & GitHub Version Control</span><span>85%</span></div>
+              <div class="progress-track"><div class="progress-fill" style="width: 85%;"></div></div>
+            </div>
+            <div class="skill-item-bar">
+              <div class="skill-item-info"><span>Postman API Testing</span><span>85%</span></div>
+              <div class="progress-track"><div class="progress-fill" style="width: 85%;"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Architecture & Patterns -->
+        <div class="glass-card skill-category-card">
+          <div class="skill-category-header">
+            <div class="skill-cat-icon icon-arch"><i class="fas fa-sitemap"></i></div>
+            <h3>Design & Patterns</h3>
+          </div>
+          <div class="skill-badges-list">
+            <div class="skill-item-bar">
+              <div class="skill-item-info"><span>MVC Architecture</span><span>95%</span></div>
+              <div class="progress-track"><div class="progress-fill" style="width: 95%;"></div></div>
+            </div>
+            <div class="skill-item-bar">
+              <div class="skill-item-info"><span>DAO (Data Access Object) Pattern</span><span>95%</span></div>
+              <div class="progress-track"><div class="progress-fill" style="width: 95%;"></div></div>
+            </div>
+            <div class="skill-item-bar">
+              <div class="skill-item-info"><span>Singleton & Factory Patterns</span><span>80%</span></div>
+              <div class="progress-track"><div class="progress-fill" style="width: 80%;"></div></div>
+            </div>
+            <div class="skill-item-bar">
+              <div class="skill-item-info"><span>Session Management & Cookies</span><span>90%</span></div>
+              <div class="progress-track"><div class="progress-fill" style="width: 90%;"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Project Deep Dive: Food App -->
+  <section id="food-app" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Flagship Full Stack Project</span>
+        <h2 class="section-title">Online Food Delivery Web App <span class="gradient-text">(food_app_tap)</span></h2>
+        <p class="section-desc">A complete production-grade Java EE application designed and developed by Naveenraja K.</p>
+      </div>
+
+      <div class="glass-card project-hero-card">
+        <div class="project-header-top">
+          <div class="project-badge-featured">
+            <i class="fas fa-star"></i> Featured Full Stack Application
+          </div>
+          <div style="color: var(--secondary); font-family: var(--font-code); font-size: 0.85rem;">
+            <i class="fas fa-folder-open"></i> eclipse-workspace/food_app_tap
+          </div>
+        </div>
+
+        <h3 class="project-title-large">Full-Stack Food Ordering & Delivery Platform</h3>
+        <p class="project-tagline">
+          Built from scratch utilizing <strong>Java Servlets, JSP, JDBC, and MySQL on Apache Tomcat 10</strong>.
+          Demonstrates production-level MVC separation of concerns, secure session-based shopping cart management,
+          transaction-safe order checkout, and relational order tracking.
+        </p>
+
+        <!-- Tech Pills -->
+        <div class="tech-pills">
+          <span class="tech-pill"><i class="fab fa-java"></i> Java 8+</span>
+          <span class="tech-pill"><i class="fas fa-server"></i> Jakarta Servlets</span>
+          <span class="tech-pill"><i class="fas fa-file-code"></i> JSP (JavaServer Pages)</span>
+          <span class="tech-pill"><i class="fas fa-database"></i> MySQL</span>
+          <span class="tech-pill"><i class="fas fa-plug"></i> JDBC & DBUtils</span>
+          <span class="tech-pill"><i class="fas fa-fire"></i> Apache Tomcat 10</span>
+          <span class="tech-pill"><i class="fab fa-css3-alt"></i> Modern CSS3 UI</span>
+          <span class="tech-pill"><i class="fas fa-sitemap"></i> MVC + DAO Pattern</span>
+        </div>
+
+        <!-- Architecture Flow Diagram -->
+        <div class="architecture-box">
+          <div class="arch-header">
+            <h4><i class="fas fa-network-wired"></i> End-to-End MVC Architecture Flow</h4>
+            <span style="font-size: 0.8rem; color: var(--text-subtle);"><i class="fas fa-shield-alt"></i> Clean Layer Separation</span>
+          </div>
+
+          <div class="mvc-flow-grid">
+            <div class="mvc-step">
+              <div class="mvc-icon"><i class="fas fa-desktop"></i></div>
+              <div class="mvc-title">1. View Layer (JSP)</div>
+              <div class="mvc-desc">`home.jsp`, `menu.jsp`, `cart.jsp`, `orderConfirmation.jsp` providing responsive, interactive user presentation.</div>
+            </div>
+
+            <div class="mvc-step">
+              <div class="mvc-icon"><i class="fas fa-route"></i></div>
+              <div class="mvc-title">2. Controller (Servlets)</div>
+              <div class="mvc-desc">`HomeServlet`, `MenuServlet`, `CartServlet`, `CheckoutServlet` handling HTTP requests & session state.</div>
+            </div>
+
+            <div class="mvc-step">
+              <div class="mvc-icon"><i class="fas fa-cubes"></i></div>
+              <div class="mvc-title">3. Model & DAO Layer</div>
+              <div class="mvc-desc">`UserDAOImpl`, `RestaurantDAOImpl`, `MenuDAOImpl`, `OrderDAOImpl` implementing business logic & queries.</div>
+            </div>
+
+            <div class="mvc-step">
+              <div class="mvc-icon"><i class="fas fa-database"></i></div>
+              <div class="mvc-title">4. MySQL Database</div>
+              <div class="mvc-desc">Normalized `food_app_db` containing relational tables for users, restaurants, menu items, orders & order items.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Detailed Feature Breakdown -->
+        <div class="features-grid">
+          <div class="feature-box">
+            <div class="feature-icon-wrapper"><i class="fas fa-user-shield"></i></div>
+            <h4>User Authentication & Sessions</h4>
+            <p>Secure user signup and login handled via `LoginServlet` and `RegisterServlet` with session persistence, role validation, and logout security.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon-wrapper"><i class="fas fa-utensils"></i></div>
+            <h4>Restaurant & Menu Explorer</h4>
+            <p>Dynamic catalog rendering of restaurant cards and dish menus with real-time availability checks and pricing retrieved through `MenuDAO`.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon-wrapper"><i class="fas fa-shopping-cart"></i></div>
+            <h4>Dynamic Session Cart</h4>
+            <p>Full cart capability supporting real-time add, quantity increment/decrement, item deletion, and subtotal calculation stored in `HttpSession`.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon-wrapper"><i class="fas fa-receipt"></i></div>
+            <h4>Checkout & Transactions</h4>
+            <p>Checkout pipeline creating orders in the `orders` table and corresponding line items in `order_items` with transactional integrity.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon-wrapper"><i class="fas fa-history"></i></div>
+            <h4>Order History & Tracking</h4>
+            <p>User-specific order history page (`orderHistory.jsp`) displaying previous purchases, order status (Pending/Confirmed), and item breakdown.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon-wrapper"><i class="fas fa-shield-virus"></i></div>
+            <h4>Modular DAO Design Pattern</h4>
+            <p>Decoupled database access using interface-based DAOs (`UserDAO`, `MenuDAO`, `OrderDAO`) with reusable connection management via `DBUtils`.</p>
+          </div>
+        </div>
+
+        <!-- Interactive Code Snippets Inspector -->
+        <div class="code-preview-card">
+          <div class="code-tabs">
+            <button class="code-tab-btn active" data-tab="cart">
+              <i class="fas fa-code"></i> CartServlet.java
+            </button>
+            <button class="code-tab-btn" data-tab="dao">
+              <i class="fas fa-code"></i> UserDAOImpl.java
+            </button>
+            <button class="code-tab-btn" data-tab="sql">
+              <i class="fas fa-database"></i> food_app_db.sql
+            </button>
+          </div>
+          <pre class="code-snippet-box"><code id="code-display">// CartServlet.java - Session-based Shopping Cart Management
+package com.tap.servlet;
+
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.*;
+import com.tap.model.CartItem;
+
+@WebServlet("/cart")
+public class CartServlet extends HttpServlet {
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) 
+            throws ServletException, IOException {
+        HttpSession session = request.getSession();
+        Map<Integer, CartItem> cart = (Map<Integer, CartItem>) session.getAttribute("cart");
+        if (cart == null) {
+            cart = new HashMap<>();
+            session.setAttribute("cart", cart);
+        }
+
+        String action = request.getParameter("action");
+        int itemId = Integer.parseInt(request.getParameter("itemId"));
+
+        if ("add".equals(action)) {
+            String name = request.getParameter("name");
+            double price = Double.parseDouble(request.getParameter("price"));
+            cart.compute(itemId, (k, v) -> v == null ? 
+                new CartItem(itemId, name, price, 1) : 
+                new CartItem(itemId, name, price, v.getQuantity() + 1));
+        } else if ("remove".equals(action)) {
+            cart.remove(itemId);
+        }
+
+        response.sendRedirect("cart.jsp");
+    }
+}</code></pre>
+        </div>
+
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="#contact" class="btn btn-primary">
+            <i class="fas fa-comments"></i> Inquire About This Project
+          </a>
+          <a href="https://github.com" target="_blank" class="btn btn-secondary">
+            <i class="fab fa-github"></i> View GitHub Repository
+          </a>
+        </div>
+      </div>
+
+      <!-- Additional Projects -->
+      <div id="projects" style="padding-top: 2rem;">
+        <div class="section-header" style="margin-bottom: 2rem;">
+          <span class="section-tag">Other Projects</span>
+          <h2 class="section-title">More <span class="gradient-text">Full Stack Work</span></h2>
+        </div>
+
+        <div class="other-projects-grid">
+          <!-- Project 2 -->
+          <div class="glass-card mini-project-card">
+            <div class="mini-project-top">
+              <span class="tech-pill" style="margin-bottom: 1rem; display: inline-block;">
+                <i class="fas fa-leaf"></i> Spring Boot + MySQL
+              </span>
+              <h3>Employee Management System</h3>
+              <p>
+                A complete CRUD web application engineered using Spring Boot REST controllers, Spring Data JPA, 
+                and MySQL. Implements data validation, pagination, and clean responsive views.
+              </p>
+              <div class="tech-pills">
+                <span class="tech-pill">Spring Boot</span>
+                <span class="tech-pill">Hibernate</span>
+                <span class="tech-pill">MySQL</span>
+                <span class="tech-pill">REST API</span>
+              </div>
+            </div>
+            <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem;">
+              <a href="https://github.com" target="_blank" class="btn btn-secondary btn-sm">
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="glass-card mini-project-card">
+            <div class="mini-project-top">
+              <span class="tech-pill" style="margin-bottom: 1rem; display: inline-block;">
+                <i class="fas fa-terminal"></i> Core Java & OOPs
+              </span>
+              <h3>Banking & Account Transaction Console App</h3>
+              <p>
+                Interactive Core Java console application simulating multi-account transactions, deposit/withdrawal 
+                validation, interest computation, and transaction history using Collections and Multithreading.
+              </p>
+              <div class="tech-pills">
+                <span class="tech-pill">Core Java</span>
+                <span class="tech-pill">OOPs</span>
+                <span class="tech-pill">Collections</span>
+                <span class="tech-pill">Exception Handling</span>
+              </div>
+            </div>
+            <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem;">
+              <a href="https://github.com" target="_blank" class="btn btn-secondary btn-sm">
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Resume Section -->
+  <section id="resume" class="section">
+    <div class="container">
+      <div class="resume-preview-box glass-card">
+        <div class="resume-info">
+          <span class="section-tag">Curriculum Vitae</span>
+          <h3>Looking for a Dedicated Java Full Stack Developer?</h3>
+          <p>
+            Download my ATS-friendly, comprehensive resume highlighting my education, TAP Academy full-stack training, 
+            skills, and hands-on projects like the <strong>Food Delivery Application</strong>.
+          </p>
+        </div>
+        <div class="resume-actions">
+          <a href="resume.html" target="_blank" class="btn btn-primary">
+            <i class="fas fa-external-link-alt"></i> View Web Resume
+          </a>
+          <button onclick="window.print()" class="btn btn-secondary">
+            <i class="fas fa-print"></i> Print / Save PDF
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Let's Build Something <span class="gradient-text">Great Together</span></h2>
+        <p class="section-desc">I am currently actively interviewing for entry-level Software Engineer & Java Developer positions.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Info Cards -->
+        <div class="glass-card contact-card-info">
+          <h3>Contact Details</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">
+            Feel free to reach out directly via email, connect on LinkedIn, or send a message below!
+          </p>
+
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-details">
+              <h5>Email Address</h5>
+              <a href="mailto:13naveen2004@gmail.com">13naveen2004@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+            <div class="contact-details">
+              <h5>Quick WhatsApp</h5>
+              <a href="https://wa.me/91XXXXXXXXXX" target="_blank">Chat with Naveenraja</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="contact-details">
+              <h5>Location</h5>
+              <p>Bangalore / Tamil Nadu, India (Open to Relocation / Remote)</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-briefcase"></i></div>
+            <div class="contact-details">
+              <h5>Availability</h5>
+              <p>Immediate Joining for Full-Time Roles</p>
+            </div>
+          </div>
+
+          <div class="social-links-row">
+            <a href="https://linkedin.com" target="_blank" class="social-btn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com" target="_blank" class="social-btn" title="GitHub"><i class="fab fa-github"></i></a>
+            <button onclick="copyEmail()" class="social-btn" title="Copy Email" style="cursor: pointer;"><i class="fas fa-copy"></i></button>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="glass-card contact-form-card">
+          <h3 style="margin-bottom: 1.25rem;">Send a Message</h3>
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" class="form-control" placeholder="e.g. Recruiter / HR Name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email Address</label>
+              <input type="email" id="email" class="form-control" placeholder="e.g. hr@company.com" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" class="form-control" placeholder="Hi Naveenraja, we would like to interview you for a Java Full Stack Developer position..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <i class="fas fa-paper-plane"></i> Send Direct Email
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Naveenraja K. All rights reserved. Crafted with clean code & passion.</p>
+      <div style="display: flex; gap: 1.5rem; font-size: 0.88rem;">
+        <a href="#about" style="color: var(--text-subtle); text-decoration: none;">About</a>
+        <a href="#food-app" style="color: var(--text-subtle); text-decoration: none;">Food App</a>
+        <a href="#skills" style="color: var(--text-subtle); text-decoration: none;">Skills</a>
+        <a href="resume.html" target="_blank" style="color: var(--text-subtle); text-decoration: none;">Resume</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
