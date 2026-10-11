@@ -237,16 +237,16 @@ CREATE TABLE orders (
       const email = document.getElementById('email').value;
       const message = document.getElementById('message').value;
 
-      const mailtoLink = `mailto:13naveen2004@gmail.com?subject=Contact from ${encodeURIComponent(name)}&body=${encodeURIComponent("Sender Email: " + email + "\n\nMessage:\n" + message)}`;
+      const mailtoLink = `mailto:mahinaveen221@gmail.com?subject=Contact from ${encodeURIComponent(name)}&body=${encodeURIComponent("Sender Email: " + email + "\n\nMessage:\n" + message)}`;
       window.location.href = mailtoLink;
-      alert("Opening your default mail client to send your message to Naveenraja K (13naveen2004@gmail.com)!");
+      alert("Opening your mail app to send your message to Naveenraja K (mahinaveen221@gmail.com)!");
     });
   }
 
   // 6. Copy Email Quick Tool
   window.copyEmail = function() {
-    navigator.clipboard.writeText('13naveen2004@gmail.com').then(() => {
-      alert("Copied email address: 13naveen2004@gmail.com to clipboard!");
+    navigator.clipboard.writeText('mahinaveen221@gmail.com').then(() => {
+      alert("Copied email address: mahinaveen221@gmail.com to clipboard!");
     });
   };
 });
