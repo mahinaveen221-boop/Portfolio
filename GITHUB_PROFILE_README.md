@@ -4,7 +4,7 @@
 
 ![Header Banner](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,12,24&height=220&section=header&text=Naveenraja%20K&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=Java%20Full%20Stack%20Developer%20|%20TAP%20Academy%20Trainee&descFontSize=20&descAlignY=62)
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/naveen-raja-9843b0350/)
 [![Email](https://img.shields.io/badge/Email-13naveen2004%40gmail.com-EA4335?style=for-the-badge&logo=gmail)](mailto:13naveen2004@gmail.com)
 [![Status](https://img.shields.io/badge/Status-Actively%20Seeking%20Roles-success?style=for-the-badge)](mailto:13naveen2004@gmail.com)
 
@@ -70,7 +70,7 @@
 ### 📫 Connect With Me
 
 - 📧 **Email:** [13naveen2004@gmail.com](mailto:13naveen2004@gmail.com)
-- 💼 **LinkedIn:** [Connect on LinkedIn](https://linkedin.com)
+- 💼 **LinkedIn:** [Connect on LinkedIn](https://www.linkedin.com/in/naveen-raja-9843b0350/)
 - 🌐 **Portfolio:** [Open My Live Portfolio](https://naveenraja-k.github.io)
 
 <div align="center">
