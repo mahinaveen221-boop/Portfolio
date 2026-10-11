@@ -6,17 +6,17 @@ echo ========================================================
 echo       Naveenraja K - Portfolio GitHub Deployment
 echo ========================================================
 echo.
-echo Please enter your GitHub Username (e.g., naveenraja-k):
-set /p GH_USER="GitHub Username: "
+echo Current Username default: mahinaveen221-boop
+echo (If you changed it on GitHub, type your new username below, e.g. mahinaveen221)
+echo.
+set /p GH_USER="Enter your GitHub Username [Press Enter for mahinaveen221-boop]: "
 
 if "%GH_USER%"=="" (
-    echo Username cannot be empty!
-    pause
-    exit /b
+    set GH_USER=mahinaveen221-boop
 )
 
 echo.
-echo Adding remote: https://github.com/%GH_USER%/portfolio.git
+echo Connecting to: https://github.com/%GH_USER%/portfolio.git
 git remote remove origin 2>nul
 git remote add origin https://github.com/%GH_USER%/portfolio.git
 git branch -M main
@@ -39,7 +39,8 @@ if %errorlevel% equ 0 (
     echo ========================================================
 ) else (
     echo.
-    echo Make sure you have created the repository 'portfolio' on https://github.com/new first!
+    echo NOTE: Make sure you created a new repository named 'portfolio'
+    echo on https://github.com/new first!
 )
 
 echo.
