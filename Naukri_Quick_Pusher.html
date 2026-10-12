@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naveenraja - Naukri 1-Click Profile Booster</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --primary: #4f46e5;
+      --primary-hover: #4338ca;
+      --accent: #10b981;
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 30px 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .header h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+
+    .header h1 span {
+      background: linear-gradient(135deg, #38bdf8, #818cf8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .header p {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+    }
+
+    .top-actions {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      margin-bottom: 35px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: all 0.2s;
+      border: none;
+    }
+
+    .btn-naukri {
+      background: #ff7555;
+      color: #fff;
+      box-shadow: 0 4px 15px rgba(255, 117, 85, 0.35);
+    }
+
+    .btn-naukri:hover {
+      background: #e05e3f;
+      transform: translateY(-2px);
+    }
+
+    .btn-resume {
+      background: #3b82f6;
+      color: #fff;
+      box-shadow: 0 4px 15px rgba(59, 130, 246, 0.35);
+    }
+
+    .btn-resume:hover {
+      background: #2563eb;
+      transform: translateY(-2px);
+    }
+
+    .alert-box {
+      background: rgba(56, 189, 248, 0.1);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      padding: 16px 20px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .alert-box i {
+      font-size: 1.5rem;
+      color: #38bdf8;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 14px;
+    }
+
+    .card-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .card-title i {
+      color: #818cf8;
+    }
+
+    .copy-btn {
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 0.85rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s;
+    }
+
+    .copy-btn:hover {
+      background: var(--primary-hover);
+    }
+
+    .copy-btn.copied {
+      background: var(--accent);
+    }
+
+    .content-box {
+      background: #090d16;
+      border: 1px solid #1e293b;
+      border-radius: 8px;
+      padding: 14px 16px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.88rem;
+      color: #cbd5e1;
+      white-space: pre-wrap;
+      word-break: break-word;
+      position: relative;
+    }
+
+    .badge-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .skill-badge {
+      background: rgba(99, 102, 241, 0.15);
+      border: 1px solid rgba(99, 102, 241, 0.3);
+      color: #a5b4fc;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 0.82rem;
+      font-weight: 600;
+    }
+
+    .info-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      font-size: 0.92rem;
+    }
+
+    .info-table td {
+      padding: 8px 12px;
+      border-bottom: 1px solid #334155;
+    }
+
+    .info-table td:first-child {
+      font-weight: 700;
+      color: #94a3b8;
+      width: 35%;
+    }
+
+    .info-table td:last-child {
+      color: #f1f5f9;
+    }
+
+    .daily-trick {
+      background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1));
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-radius: 12px;
+      padding: 22px;
+      margin-top: 30px;
+    }
+
+    .daily-trick h3 {
+      color: #34d399;
+      font-size: 1.15rem;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">
+      <h1>Naukri <span>1-Click Fast Pusher</span></h1>
+      <p>Naveenraja K &bull; Entry-Level Java Full Stack Developer (Fresher 2026 Batch)</p>
+    </div>
+
+    <div class="top-actions">
+      <a href="https://www.naukri.com/mnjuser/profile" target="_blank" class="btn btn-naukri">
+        <i class="fas fa-external-link-alt"></i> 1. Open Naukri Profile Page
+      </a>
+      <a href="resume.html" target="_blank" class="btn btn-resume">
+        <i class="fas fa-file-pdf"></i> 2. Open Resume (Save as PDF)
+      </a>
+    </div>
+
+    <div class="alert-box">
+      <i class="fas fa-info-circle"></i>
+      <div>
+        <strong>Eppadi use panradhu?</strong>
+        <p style="font-size: 0.88rem; color: #94a3b8; margin-top: 2px;">
+          Naukri profile page-ai open panni, keezhe irukkira ovvoru card-layum irukkira <strong>"Copy"</strong> button-ai click panni Naukri-la paste pannunga!
+        </p>
+      </div>
+    </div>
+
+    <!-- 1. Headline -->
+    <div class="card">
+      <div class="card-top">
+        <div class="card-title">
+          <i class="fas fa-heading"></i> 1. Resume Headline (Search Ranking #1)
+        </div>
+        <button class="copy-btn" onclick="copyText('headline-text', this)">
+          <i class="fas fa-copy"></i> Copy Headline
+        </button>
+      </div>
+      <div class="content-box" id="headline-text">Java Full Stack Developer (Fresher 2026 Batch) | TAP Academy Coursework | Hands-on Core Java, Servlets, JSP, JDBC, MySQL, Spring Boot | Built Food Delivery Web App (MVC + DAO) | Immediate Joiner in Bengaluru</div>
+    </div>
+
+    <!-- 2. Key Skills -->
+    <div class="card">
+      <div class="card-top">
+        <div class="card-title">
+          <i class="fas fa-tags"></i> 2. Key Skills (Add Key Skills Box)
+        </div>
+        <button class="copy-btn" onclick="copyText('skills-raw', this)">
+          <i class="fas fa-copy"></i> Copy All Skills
+        </button>
+      </div>
+      <div class="content-box" id="skills-raw" style="display:none;">Java, Core Java, Jakarta Servlets, JavaServer Pages (JSP), JDBC, MySQL, Data Structures & Algorithms, OOPs, Spring Boot, MVC Architecture, DAO Pattern, REST APIs, HTML5, CSS3, JavaScript, Apache Tomcat, Eclipse IDE, Git, GitHub</div>
+      <div class="badge-grid">
+        <span class="skill-badge">Java</span>
+        <span class="skill-badge">Core Java</span>
+        <span class="skill-badge">Jakarta Servlets</span>
+        <span class="skill-badge">JSP</span>
+        <span class="skill-badge">JDBC</span>
+        <span class="skill-badge">MySQL</span>
+        <span class="skill-badge">Data Structures</span>
+        <span class="skill-badge">OOPs</span>
+        <span class="skill-badge">Spring Boot</span>
+        <span class="skill-badge">MVC Architecture</span>
+        <span class="skill-badge">DAO Pattern</span>
+        <span class="skill-badge">REST APIs</span>
+        <span class="skill-badge">HTML5/CSS3</span>
+        <span class="skill-badge">JavaScript</span>
+        <span class="skill-badge">Apache Tomcat 10</span>
+        <span class="skill-badge">Git & GitHub</span>
+      </div>
+    </div>
+
+    <!-- 3. Summary -->
+    <div class="card">
+      <div class="card-top">
+        <div class="card-title">
+          <i class="fas fa-align-left"></i> 3. Profile Summary
+        </div>
+        <button class="copy-btn" onclick="copyText('summary-text', this)">
+          <i class="fas fa-copy"></i> Copy Summary
+        </button>
+      </div>
+      <div class="content-box" id="summary-text">Enthusiastic and disciplined Computer Science Engineering Fresher (B.E. 2026 Batch, 8.0 CGPA) undergoing intensive, industry-aligned Java Full Stack Web Development training at TAP Academy, Bengaluru.
+
+Solid technical foundation in Core Java (OOPs, Collections Framework, Multithreading, Exception Handling), Jakarta Servlets, JSP, JDBC, and relational database management using MySQL. 
+
+Demonstrated practical engineering ability by architecting an end-to-end Online Food Delivery Web Application (food_app_tap) utilizing MVC architecture, DAO design pattern, session-driven shopping cart management, and transaction-safe order persistence on Apache Tomcat 10.
+
+Actively practicing Data Structures & Algorithms (DSA) in Java. Seeking an entry-level Software Engineer / Java Developer role. Available for immediate joining in Bengaluru.
+
+Portfolio: https://mahinaveen221-boop.github.io/Portfolio/
+GitHub: https://github.com/mahinaveen221-boop
+Email: mahinaveen221@gmail.com | Phone: +91 90807 27920</div>
+    </div>
+
+    <!-- 4. Projects -->
+    <div class="card">
+      <div class="card-top">
+        <div class="card-title">
+          <i class="fas fa-project-diagram"></i> 4. Project: Online Food Delivery Web App
+        </div>
+        <button class="copy-btn" onclick="copyText('project-desc', this)">
+          <i class="fas fa-copy"></i> Copy Project Details
+        </button>
+      </div>
+      <table class="info-table">
+        <tr><td>Project Title</td><td>Online Food Delivery Web Application (food_app_tap)</td></tr>
+        <tr><td>Client / Institute</td><td>TAP Academy / Academic Project</td></tr>
+        <tr><td>Location</td><td>Bengaluru, India</td></tr>
+        <tr><td>Team Size</td><td>1 (Solo Project)</td></tr>
+      </table>
+      <div class="content-box" id="project-desc" style="margin-top: 12px;">• Developed a production-standard food delivery web application using Java Servlets, JSP, JDBC, and MySQL adhering to MVC and DAO architectural patterns.
+• Implemented secure user authentication, dynamic catalog and menu browsing, and session-persistent shopping cart operations using HttpSession.
+• Designed a normalized relational database schema with referential integrity for orders and order line items.
+• Source Code: https://github.com/mahinaveen221-boop/food_app_tap</div>
+    </div>
+
+    <!-- 5. Key Settings -->
+    <div class="card">
+      <div class="card-top">
+        <div class="card-title">
+          <i class="fas fa-sliders-h"></i> 5. Important Settings (Recruiter Filters)
+        </div>
+      </div>
+      <table class="info-table">
+        <tr><td>Experience Level</td><td><strong style="color: #38bdf8;">I am a Fresher (0 Years)</strong></td></tr>
+        <tr><td>College</td><td>Alpha College of Engineering (B.E. CSE, 2026 Batch, 8.0 CGPA)</td></tr>
+        <tr><td>Certifications / Training</td><td>Java Full Stack Web Development — TAP Academy, Bengaluru</td></tr>
+        <tr><td>Preferred Locations</td><td>Bengaluru / Bangalore, Chennai</td></tr>
+        <tr><td>Notice Period</td><td><strong style="color: #34d399;">Immediately Available (0 Days)</strong> ⚡</td></tr>
+      </table>
+    </div>
+
+    <!-- Daily Hack -->
+    <div class="daily-trick">
+      <h3><i class="fas fa-bolt"></i> Daily Morning Profile Push Hack (Free HR Calls):</h3>
+      <p style="color: #cbd5e1; font-size: 0.92rem; margin-top: 4px;">
+        Daily morning <strong>9:00 AM - 10:30 AM</strong>-ku Naukri open panni, ungal Key Skills alladhu Profile Summary-la oru space pottu <strong>Save</strong> pannunga. 
+        Anaikku full-aa ungal profile recruiters search result-la <strong>#1 Page Top Rank</strong>-la kaatum!
+      </p>
+    </div>
+  </div>
+
+  <script>
+    function copyText(id, btn) {
+      const text = document.getElementById(id).innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        const originalText = btn.innerHTML;
+        btn.innerHTML = '<i class="fas fa-check"></i> Copied! ✨';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.innerHTML = originalText;
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>
