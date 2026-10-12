@@ -84,7 +84,7 @@ public class NaveenrajaK {
 - 💼 **LinkedIn:** [linkedin.com/in/naveen-raja-9843b0350](https://www.linkedin.com/in/naveen-raja-9843b0350/)
 - 📧 **Email:** [mahinaveen221@gmail.com](mailto:mahinaveen221@gmail.com)
 - 📱 **WhatsApp:** [+91 90807 27920](https://wa.me/919080727920)
-- 📍 **Location:** Chennai / Thirumazhisai, Tamil Nadu, India
+- 📍 **Location:** Bengaluru, Karnataka, India
 
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,12,24&height=100&section=footer" width="100%" />
