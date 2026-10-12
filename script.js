@@ -249,4 +249,81 @@ CREATE TABLE orders (
       alert("Copied email address: mahinaveen221@gmail.com to clipboard!");
     });
   };
+
+  // 7. Interactive Food App Simulator
+  let simCart = [];
+
+  window.addToSimCart = function(name, price) {
+    const existing = simCart.find(i => i.name === name);
+    if (existing) {
+      existing.qty++;
+    } else {
+      simCart.push({ name, price, qty: 1 });
+    }
+    renderSimCart();
+  };
+
+  window.removeSimCart = function(index) {
+    simCart.splice(index, 1);
+    renderSimCart();
+  };
+
+  function renderSimCart() {
+    const list = document.getElementById('sim-cart-items');
+    const count = document.getElementById('sim-cart-count');
+    const totalVal = document.getElementById('sim-cart-total-val');
+    const badge = document.getElementById('sim-order-success');
+    if (badge) badge.style.display = 'none';
+
+    if (!list) return;
+
+    if (simCart.length === 0) {
+      list.innerHTML = '<div style="color: #64748b; font-size: 0.82rem; text-align: center; padding-top: 20px;">Cart is empty. Click "+ Add" on any dish above!</div>';
+      count.textContent = '0';
+      totalVal.textContent = '₹0.00';
+      return;
+    }
+
+    let html = '';
+    let total = 0;
+    let totalQty = 0;
+
+    simCart.forEach((item, idx) => {
+      const itemSubtotal = item.price * item.qty;
+      total += itemSubtotal;
+      totalQty += item.qty;
+      html += `
+        <div class="sim-cart-row">
+          <span>${item.name} (${item.qty}x)</span>
+          <div>
+            <span style="margin-right: 6px;">₹${itemSubtotal}</span>
+            <button onclick="removeSimCart(${idx})" title="Remove item">&times;</button>
+          </div>
+        </div>
+      `;
+    });
+
+    list.innerHTML = html;
+    count.textContent = totalQty;
+    totalVal.textContent = `₹${(total * 1.05).toFixed(2)}`;
+  }
+
+  window.checkoutSimOrder = function() {
+    if (simCart.length === 0) {
+      alert("Cart is empty! Click '+ Add' on any dish first.");
+      return;
+    }
+    const badge = document.getElementById('sim-order-success');
+    const orderIdSpan = document.getElementById('sim-order-id');
+    const randomId = Math.floor(10000 + Math.random() * 90000);
+    if (orderIdSpan) orderIdSpan.textContent = `#TAP-${randomId}`;
+    if (badge) badge.style.display = 'block';
+    simCart = [];
+    const list = document.getElementById('sim-cart-items');
+    const count = document.getElementById('sim-cart-count');
+    const totalVal = document.getElementById('sim-cart-total-val');
+    if (list) list.innerHTML = '<div style="color: #10b981; font-size: 0.82rem; text-align: center; padding-top: 20px;">✅ Transaction Committed! Check simulated status below.</div>';
+    if (count) count.textContent = '0';
+    if (totalVal) totalVal.textContent = '₹0.00';
+  };
 });

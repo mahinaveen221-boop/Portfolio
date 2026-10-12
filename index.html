@@ -498,6 +498,78 @@
           </div>
         </div>
 
+        <!-- Interactive MVC Simulation Sandbox -->
+        <div class="simulator-container">
+          <div class="sim-header">
+            <h4><i class="fas fa-play-circle"></i> Live MVC Simulation: Test Cart & Order Flow</h4>
+            <span style="font-size: 0.8rem; color: var(--text-subtle);"><i class="fas fa-bolt"></i> Simulates CartServlet & OrderDAO In Real Time</span>
+          </div>
+
+          <div class="sim-grid">
+            <div class="sim-menu-list">
+              <div class="sim-menu-item">
+                <div class="sim-item-info">
+                  <h5>Hyderabadi Chicken Biryani</h5>
+                  <span>₹280.00 &bull; Restaurant: Spice Hub</span>
+                </div>
+                <button class="btn btn-secondary btn-sm" onclick="addToSimCart('Hyderabadi Chicken Biryani', 280)">
+                  <i class="fas fa-plus"></i> Add
+                </button>
+              </div>
+
+              <div class="sim-menu-item">
+                <div class="sim-item-info">
+                  <h5>Paneer Butter Masala</h5>
+                  <span>₹220.00 &bull; Restaurant: Royal Veg</span>
+                </div>
+                <button class="btn btn-secondary btn-sm" onclick="addToSimCart('Paneer Butter Masala', 220)">
+                  <i class="fas fa-plus"></i> Add
+                </button>
+              </div>
+
+              <div class="sim-menu-item">
+                <div class="sim-item-info">
+                  <h5>Butter Garlic Naan (2 pcs)</h5>
+                  <span>₹60.00 &bull; Restaurant: Spice Hub</span>
+                </div>
+                <button class="btn btn-secondary btn-sm" onclick="addToSimCart('Butter Garlic Naan (2 pcs)', 60)">
+                  <i class="fas fa-plus"></i> Add
+                </button>
+              </div>
+            </div>
+
+            <!-- Cart Session State Visualizer -->
+            <div class="sim-cart-box">
+              <div>
+                <div class="sim-cart-title">
+                  <span><i class="fas fa-shopping-bag"></i> Session Cart (<span id="sim-cart-count">0</span> items)</span>
+                  <small style="color: var(--secondary); font-family: var(--font-code);">HttpSession</small>
+                </div>
+                <div class="sim-cart-items-list" id="sim-cart-items">
+                  <div style="color: #64748b; font-size: 0.82rem; text-align: center; padding-top: 20px;">
+                    Cart is empty. Click "+ Add" on any dish above!
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="sim-cart-total">
+                  <span>Grand Total (incl. GST):</span>
+                  <span id="sim-cart-total-val" style="color: var(--accent);">₹0.00</span>
+                </div>
+                <button class="btn btn-primary btn-sm" style="width: 100%;" onclick="checkoutSimOrder()" id="sim-checkout-btn">
+                  <i class="fas fa-check-circle"></i> Place Simulated Order
+                </button>
+                <div class="sim-order-badge" id="sim-order-success">
+                  <strong><i class="fas fa-badge-check"></i> Order Placed Successfully!</strong><br>
+                  Order ID: <span id="sim-order-id" style="font-family: var(--font-code); color: #fff;">#TAP-9481</span><br>
+                  <small>Dispatched via <code>CheckoutServlet</code> ➔ Persisted to <code>orders</code> & <code>order_items</code> tables.</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- Interactive Code Snippets Inspector -->
         <div class="code-preview-card">
           <div class="code-tabs">
@@ -556,8 +628,8 @@ public class CartServlet extends HttpServlet {
           <a href="#contact" class="btn btn-primary">
             <i class="fas fa-comments"></i> Inquire About This Project
           </a>
-          <a href="https://github.com/mahinaveen221" target="_blank" class="btn btn-secondary">
-            <i class="fab fa-github"></i> View GitHub Repository
+          <a href="https://github.com/mahinaveen221-boop/food_app_tap" target="_blank" class="btn btn-secondary">
+            <i class="fab fa-github"></i> View Food App Code on GitHub
           </a>
         </div>
       </div>
